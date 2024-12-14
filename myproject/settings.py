@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3q(76bt=mh+mihk=0bbk0g23)c%1xd2l#a@qxjb9&da7mn&5&s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['medical-database-management.onrender.com']
 
