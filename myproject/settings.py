@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3q(76bt=mh+mihk=0bbk0g23)c%1xd2l#a@qxjb9&da7mn&5&s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['medical-database-management.onrender.com']
 
 
 # Application definition
@@ -58,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
@@ -130,7 +131,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
-STATIC_ROOT = os.path.join(BASE_DIR, "/")
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
 
@@ -145,8 +146,6 @@ EMAIL_HOST_USER='meddata25@gmail.com'
 EMAIL_HOST_PASSWORD='atsmikpuemvrxxic'
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
-
-ALLOWED_HOSTS = ['medical-database-management.onrender.com']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
