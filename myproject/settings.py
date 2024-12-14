@@ -146,6 +146,8 @@ EMAIL_HOST_PASSWORD='atsmikpuemvrxxic'
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
 
+ALLOWED_HOSTS = ['medical-database-management.onrender.com']
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
