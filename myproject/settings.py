@@ -147,6 +147,20 @@ EMAIL_HOST_PASSWORD='atsmikpuemvrxxic'
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'ERROR',
+    },
+}
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
