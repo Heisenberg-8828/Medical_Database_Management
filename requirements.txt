@@ -9,3 +9,4 @@ psycopg2-binary>=2.9.6  # Include if using PostgreSQL
 whitenoise>=6.5.0  # For serving static files in production
 pillow>=10.0.0  # If handling image uploads
 requests>=2.31.0
+openpyxl>=3.1.2
