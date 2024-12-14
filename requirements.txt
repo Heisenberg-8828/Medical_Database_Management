@@ -1,6 +1,10 @@
-requests==2.25.1
-beautifulsoup4==4.10.0
-lxml==4.8.0
-fastapi==0.85.0
-uvicorn==0.18.3
-gunicorn==20.1.0
+asgiref>=3.5.2
+Django>=4.1.1
+django-crispy-forms>=1.14.0
+django-filter>=22.1
+django-import-export>=3.0.1
+djangorestframework>=3.14.0
+gunicorn>=21.2.0  # For WSGI server (necessary for deployment)
+psycopg2-binary>=2.9.6  # Include if using PostgreSQL
+whitenoise>=6.5.0  # For serving static files in production
+pillow>=10.0.0  # If handling image uploads
