@@ -7,13 +7,9 @@
     }],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/static/(.*)", "dest": "staticfiles/$1",
             "dest": "myproject/wsgi.py"
         }
     ]
 }
-{
-  "routes": [
-    { "src": "/static/(.*)", "dest": "staticfiles/$1" }
-  ]
-}
+
